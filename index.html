@@ -9,11 +9,18 @@
 <body>
     <header class="encabezado">
         <h1 class="tituloPrincipal">Introducción a las  Máquinas Complejas  y Robótica</h1>
-    </header>
-    <nav class="navegador">
-            <img src="img/iconoMenu.svg" alt="" class="iconoMenu">
+        <div class="dropdown">
+            <button class="dropdown-trigger" onclick="toggleMenu(event)">
+                <img src="img/iconoMenu.svg" alt="Menu" class="menu-icon">
+            </button>
+            <div id="dropdownMenu">
+                <a href="#introduccion" class="dropdown-item">Introducción</a>
+                <a href="#objetivos" class="dropdown-item">Objetivos de aprendizaje</a>
+                <a href="#aprender" class="dropdown-item">¿Qué aprenderás?</a>
+                <a href="#unidades" class="dropdown-item">Unidades</a>
+            </div>
         </div>
-    </nav>
+    </header>
     <div id="introduccion" class="introduccion">
         <div class="contenidoIntroduccion">
             <h1 class="tituloContenidos">Introducción</h1>
@@ -37,8 +44,8 @@
     </div>
     <img src="img/engranajes.svg" alt="" class="imagenObjetivos">
     </div>
-    <div id="aprender" class="aprender">
-        <div class="contenidoAprender">
+    <div  class="aprender">
+        <div id="aprender"  class="contenidoAprender">
             <h1 class="tituloContenidos">¿Qué aprenderás?</h1>
             <p class="textoContenidos">
                 Aprenderás sobre el funcionamiento de <br>
@@ -53,8 +60,8 @@
         </div>
         <img src="img/robot2.svg" alt="" class="imagenAprender">
         </div>
-        <div id="unidades" class="unidades">
-            <div class="contenidoUnidades">
+        <div class="unidades">
+            <div  id="unidades"  class="contenidoUnidades">
                 <h1 class="tituloContenidos">Unidades</h1>
                 <div class="unidades">
                     <ul>
@@ -96,5 +103,6 @@
         </p>
     </div>
 </footer>
+<script src="js/script.js"></script>
 </body>
 </html>
